@@ -23,25 +23,26 @@
     <div>
       <label for="item">Enter a new item:</label>
       <input type="text" name="item" id="item">
-      <button>Add item</button>
+      <button id="addItem">Add item</button>
     </div>
 
     <ul>
 
     </ul>
 
-    <script>
-    const list = document.querySelector("ul");
-    const userInput = document.querySelector("input");
-    const btn = document.querySelector("button");
-
-    function buttonClicked(btn) {
-        alert("HI!");
-    }
     
-    btn.addEventListener("click", buttonClicked);
+    <script>
+        const list = document.querySelector("ul");
+        const userInput = document.querySelector("input");
+        const btn = document.querySelector("#addItem");
 
-
+        function buttonClicked() {
+            let input = userInput.value;
+            userInput.value = "";
+        }
+        
+        btn.addEventListener("click", buttonClicked);
     </script>
+
   </body>
 </html>
