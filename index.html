@@ -51,14 +51,14 @@
 
             listItem.appendChild(span);
             listItem.appendChild(deleteBtn);
-
             list.appendChild(listItem);
+
+            userInput.focus();
 
             deleteBtn.addEventListener("click", function () {
                 list.removeChild(listItem);
             });
         }
-
         btn.addEventListener("click", buttonClicked);
     </script>
 
